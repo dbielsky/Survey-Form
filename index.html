@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">
+          Daily time spent surfing survey
+        </h1>
+        <p id="description">
+          <em>Thank you for participating, this won't take you more than 3 minutes.</em>
+        </p>
+      </header>
+      <main>
+        <form action="" method="GET" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required="required">
+          <label for="email" id="email-label" required="required"> E-Mail</label>
+          <input type="email" id="email" required="required" placeholder="Enter your email">
+          <label for="age" id="number">Your Age</label>
+          <input type="number" id="age" placeholder="Age" min="10" max="99">
+          <label for="">Your current position</label>
+          <select id="dropdown" name="selection" required="required">
+          <option value="" disabled="disabled" selected="selected">Select your current role</option>
+            <option value="full-time">Full-Time Job</option>
+            <option value="part-time">Part-Time Job</option>
+            <option value="student">Student</option>
+            <option value="nojob">Unemployed</option>
+            <option value="nottosay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <div>Average time spent surfing daily</div>
+          <label for="2hours"><input type="radio" value="0-2hours" name="time-spent" id="2hours" checked> 0-2 hours</label>
+          <label for="4hours"><input type="radio" value="2-4hours" name="time-spent" id="4hours"> 2-4 hours</label>
+          <label for="6hours"><input type="radio" value="4-6hours" name="time-spent" id="6hours"> 4-6 hours</label>
+          <label for="8hours"><input type="radio" value="6-8hours" name="time-spent" id="8hours"> 6-8 hours</label>
+          <label for="8plushours"><input type="radio" value="8plushours" name="time-spent" id="8plushours"> 8+ hours</label>
+          <div>Check the devices you use to surf (all that apply) </div>
+          <label for="smartphone"><input id="smartphone" type="checkbox" value="smartphone" id="smartphone">Smartphone</label>
+          <label for="laptop-pc"> <input type="checkbox" value="laptop-pc" id="laptop-pc">Laptop/PC</label>
+          <label for="tablet"> <input type="checkbox" value="tablet" id="tablet">Tablet</label>
+          <label for="smarttv"> <input type="checkbox" value="smarttv" id="smarttv">Smart TV</label>
+          <label for="text">Comments or suggestions</label>
+          <textarea id="text" placeholder="Enter your comments here" cols="30" rows="5" autofocus="autofocus"></textarea>
+          <button type="submit" id="submit">Submit</button>
+      
+        </form>
+      
+      </main>
+</body>
+</html>
